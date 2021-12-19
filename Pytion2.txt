@@ -1,0 +1,182 @@
+import time
+import pyttsx3
+import sys
+import turtle
+
+def Speak(audio):
+    engine = pyttsx3.init()
+    engine.say(audio)
+    engine.runAndWait()
+
+animation = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
+a = input("Name:")
+print("Do you want me to know your Surname.If yes write yes.If no write no.")
+q = input()
+if q == "Yes"or "yes":
+    b = input("Surname:")
+    print("Hello", a, b)
+else:
+    print("Hello", a)
+
+def my_function1():
+    c=input("Password:")
+    if c == "Password":
+        print("Hello", a, )
+    else:
+        time.sleep(0.7)
+        Speak("goodbye")
+        sys.exit(0)
+
+
+
+time.sleep(1)
+my_function1()
+for i in range(len(animation)):
+    time.sleep(0.5)
+    sys.stdout.write("\r" + animation[i % len(animation)])
+    sys.stdout.flush()
+win = turtle.Screen()
+win.title("Hello World")
+win.bgcolor("green")
+
+turta = turtle.Turtle()
+turta.color("black")
+turta.pensize(4)
+turta.speed(100000000000000000)
+
+
+
+turta.penup()
+turta.goto(-320, 0)
+turta.pendown()
+turta.left(90)
+turta.forward(70)
+turta.penup()
+turta.goto(-320, 35)
+turta.down()
+turta.right(90)
+turta.forward(50)
+turta.penup()
+turta.goto(-270, 70)
+turta.pendown()
+turta.right(90)
+turta.forward(70)
+
+
+turta.penup()
+turta.goto(-260, 0)
+turta.pendown()
+turta.right(180)
+turta.forward(70)
+turta.right(90)
+turta.forward(35)
+turta.penup()
+turta.goto(-260, 35)
+turta.pendown()
+turta.forward(35)
+turta.penup()
+turta.goto(-260, 0)
+turta.pendown()
+turta.forward(35)
+
+
+turta.penup()
+turta.goto(-210, 70)
+turta.pendown()
+turta.right(90)
+turta.forward(70)
+turta.left(90)
+turta.forward(35)
+
+
+turta.penup()
+turta.goto(-165, 70)
+turta.pendown()
+turta.right(90)
+turta.forward(70)
+turta.left(90)
+turta.forward(35)
+
+turta.penup()
+turta.goto(-90, 70)
+turta.pendown()
+
+for i in range(25):
+    turta.right(15)
+    turta.forward(10)
+
+
+turta.penup()
+turta.goto(-10, 70)
+turta.pendown()
+turta.right(55)
+turta.forward(70)
+turta.left(150)
+turta.forward(70)
+turta.right(155)
+turta.forward(70)
+turta.left(150)
+turta.forward(70)
+
+
+turta.penup()
+turta.goto(70, 55)
+turta.pendown()
+
+for i in range(25):
+    turta.right(15)
+    turta.forward(10)
+
+turta.penup()
+turta.goto(160, 70)
+turta.pendown()
+turta.right(150)
+turta.forward(70)
+turta.goto(160, 70)
+turta.right(200)
+for i in range(20):
+    turta.right(15)
+    turta.forward(6)
+turta.left(180)
+turta.forward(60)
+
+
+turta.penup()
+turta.goto(220, 70)
+turta.pendown()
+turta.right(40)
+turta.forward(70)
+turta.left(90)
+turta.forward(35)
+
+
+turta.penup()
+turta.goto(290, 70)
+turta.pendown()
+turta.right(90)
+turta.forward(70)
+turta.penup()
+turta.goto(270, 70)
+turta.pendown()
+turta.left(120)
+
+for i in range(15):
+    turta.right(15)
+    turta.forward(10)
+
+turtle.bye()
+
+Speak("Welcome "+a)
+Speak("Please press enter")
+a = input()
+if a == "":
+    time.sleep(0.5)
+    print("Code:F239U8238FO20A983F1P91-982--12=`-1[=O`IPJOU;pb-y80vcyvbjnpo;")
+    time.sleep(5)
+    sys.exit(0)
+else:
+    Speak("Wow really you would betray me goodbye")
+    sys.exit(0)
+
+
+
